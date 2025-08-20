@@ -3,7 +3,7 @@ import { removeFromCart, clearCart } from '../features/cart/cartSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '../app/store';
 import type { CartItem } from '../features/cart/types';
-import '../App.css'
+import '../App.css';
 
 export default function Cart() {
   const cart = useSelector((state: RootState) => state.cart) as CartItem[];;
@@ -28,7 +28,7 @@ export default function Cart() {
           <ul className="product">
             {cart.map(item => (
               <li key={item.id} className="cart-item">
-                <img src={item.image} alt={item.title} className="h-12 w-12 object-contain mr-2" />
+                <img src={item.image} alt={item.title} className="h-12 w-12 object-contain mr-2"/>
                 <div className="flex-1">
                   <p>{item.title}</p>
                   <p>Qty: {item.quantity}</p>

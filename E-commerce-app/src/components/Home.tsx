@@ -39,8 +39,9 @@ export default function Home() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {products?.map((product: any) => (
+          
           <div key={product.id} className="border p-4 rounded shadow">
-            <img src={product.image} alt={product.title} className="h-40 object-contain mx-auto mb-2" />
+            <img src={product.image} alt={product.title} className="h-40 object-contain mx-auto mb-2"/>
             <h2 className="font-semibold">{product.title}</h2>
             <p>${product.price}</p>
             <p>{product.category}</p>
