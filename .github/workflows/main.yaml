@@ -23,15 +23,15 @@ jobs:
 
 
       - name: Install dependencies
-        working-directory: ./client
+        working-directory: ./e-commerce-app
         run: npm install 
 
       - name: Run build
-        working-directory: ./client
+        working-directory: ./e-commerce-app
         run: npm run build
 
       - name: Print debugging information
-        working-directory: ./client
+        working-directory: ./e-commerce-app"
         run: |
           echo "Node Version: $(node -v)"
           echo "NPM Version: $(npm -v)"
