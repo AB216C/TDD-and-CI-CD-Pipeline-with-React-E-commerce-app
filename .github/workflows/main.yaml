@@ -13,6 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Show directory structure
+        run: |
+          pwd 
+          tree -L 3 || find. -maxdepth 3
+
       - name: List root files(debugging)
         run: ls -la
 
@@ -23,15 +28,15 @@ jobs:
 
 
       - name: Install dependencies
-        working-directory: ./CI-CD-PipelineForReact-E-commerce-app/e-commerce-app
+        working-directory: ./e-commerce-app
         run: npm install 
 
       - name: Run build
-        working-directory: ./CI-CD-PipelineForReact-E-commerce-app/e-commerce-app
+        working-directory: ./e-commerce-app
         run: npm run build
 
       - name: Print debugging information
-        working-directory: ./CI-CD-PipelineForReact-E-commerce-app/e-commerce-app
+        working-directory: ./e-commerce-app
         run: |
           echo "Node Version: $(node -v)"
           echo "NPM Version: $(npm -v)"
