@@ -14,10 +14,12 @@ CI pipeline
 
 create .github/workflows with main.yaml file
 
-1. Implementing TDD-Unit tests
+1. Implementing TDD-Unit tests-Working on Running components tests
 
-2. Implementing CI
+2. Implementing CI(COMPLETED)
 
 3. Implementing CD using Vercel
+
+
 
 
