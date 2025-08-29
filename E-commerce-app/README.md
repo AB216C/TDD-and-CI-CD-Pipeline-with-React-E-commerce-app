@@ -12,38 +12,28 @@ Brwose: http://localhost:5173
 
 TDD, CI/CD pipeline
 
-create .github/workflows with main.yaml file
+STEPS TO FOLLOW: 
 
-1. Implementing TDD-Unit tests-Working on Running components tests
+1. create .github/workflows with main.yaml file
 
-2. Implementing CI(COMPLETED)
+2. Implementing TDD-Unit tests-Working on Running components tests
 
-3. Implementing CD using Vercel
+3. Implementing CI(COMPLETED)
 
-
-
-TDD test
-
-# Packages
-
-npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
+4. Implementing CD using Vercel
 
 
-<!-- # TO INSTALL
-npm install --save-dev @testing-library/react @testing-library/jest-dom @reduxjs/toolkit react-redux jest
+#No need for package installation for to run CI test, only yaml file needed.
 
-
-npm install --save-dev ts-jest @types/jest
-
-
-npm install --save-dev @testing-library/react @testing-library/jest-dom jest jest-environment-jsdom
-npm install --save-dev @testing-library/user-event @babel/preset-env @babel/preset-react
-npm install --save-dev ts-jest @types/jest @types/react-redux -->
-
-
-
-# For testing
+# For Unit testing and TDD
 
 npm install --save-dev vitest @testing-library/react @testing-library/jest-dom jsdom
-
+npm install --save-dev @testing-library/user-event @babel/preset-env @babel/preset-react
+npm install --save-dev ts-jest @types/jest @types/react-redux
 npm install --save-dev vitest
+
+# Adding Testing Environment
+
+// src/setupTests.ts
+import '@testing-library/jest-dom';
+
