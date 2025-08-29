@@ -11,3 +11,44 @@
   },
   "include": ["src"]
 }
+
+// {
+//   "compilerOptions": {
+//     "types": ["vitest", "jest"],
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "moduleResolution": "node16",  // lowercase + node16
+//     "jsx": "react-jsx",
+//     "esModuleInterop": true,
+//     "strict": true
+//   },
+//   "include": ["src"]
+// }
+
+// {
+//   "compilerOptions": {
+//     "types": ["vitest", "jest"],
+//     "target": "ESNext",
+//     "module": "ES2020",        // Changed from ESNext to ES2020
+//     "moduleResolution": "node16",
+//     "jsx": "react-jsx",
+//     "esModuleInterop": true,
+//     "strict": true
+//   },
+//   "include": ["src"]
+// }
+
+
+// {
+//   "compilerOptions": {
+//     "types": ["vitest", "jest"],
+//     "target": "ESNext",
+//     "module": "NodeNext",
+//     "moduleResolution": "nodenext",
+//     "jsx": "react-jsx",
+//     "esModuleInterop": true,
+//     "strict": true,
+//     "skipLibCheck": true
+//   },
+//   "include": ["src"]
+// }
