@@ -10,7 +10,7 @@ npm run dev,
 
 Brwose: http://localhost:5173
 
-CI pipeline
+TDD, CI/CD pipeline
 
 create .github/workflows with main.yaml file
 
@@ -22,4 +22,28 @@ create .github/workflows with main.yaml file
 
 
 
+TDD test
 
+# Packages
+
+npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
+
+
+<!-- # TO INSTALL
+npm install --save-dev @testing-library/react @testing-library/jest-dom @reduxjs/toolkit react-redux jest
+
+
+npm install --save-dev ts-jest @types/jest
+
+
+npm install --save-dev @testing-library/react @testing-library/jest-dom jest jest-environment-jsdom
+npm install --save-dev @testing-library/user-event @babel/preset-env @babel/preset-react
+npm install --save-dev ts-jest @types/jest @types/react-redux -->
+
+
+
+# For testing
+
+npm install --save-dev vitest @testing-library/react @testing-library/jest-dom jsdom
+
+npm install --save-dev vitest
