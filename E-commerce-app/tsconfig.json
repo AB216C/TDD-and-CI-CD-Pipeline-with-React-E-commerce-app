@@ -62,19 +62,34 @@
 //   "include": ["src"]
 // }
 
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext",
+//     "jsx": "react-jsx",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "types": ["vitest", "jest"],
+//     "skipLibCheck": true,
+//     "baseUrl": "./src"
+//   },
+//   "include": ["src"]
+// }
+
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "node",  // 👈 revert to classic
     "jsx": "react-jsx",
-    "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "types": ["vitest", "jest"],
     "skipLibCheck": true,
     "baseUrl": "./src"
   },
   "include": ["src"]
 }
-
